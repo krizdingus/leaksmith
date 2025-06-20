@@ -1,0 +1,168 @@
+/* FBI template styles */
+
+/* Page setup - US Letter with 1" margins */
+@page {
+    size: 8.5in 11in;
+    margin: 1in;
+}
+
+/* Global styles */
+body {
+    font-family: 'Courier New', monospace;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #000;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #000;
+    padding-bottom: 0.5in;
+    margin-bottom: 0.5in;
+}
+
+.agency {
+    font-size: 14pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.classification {
+    font-size: 16pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #c00;
+    text-align: right;
+    border: 2px solid #c00;
+    padding: 5px 10px;
+}
+
+/* Main content styles */
+main {
+    margin: 0;
+}
+
+h1 {
+    font-size: 18pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.5in 0 0.25in 0;
+    letter-spacing: 1px;
+}
+
+.date {
+    text-align: center;
+    font-size: 11pt;
+    margin-bottom: 0.5in;
+    font-style: italic;
+}
+
+.content {
+    text-align: justify;
+}
+
+/* Content typography */
+.content h2 {
+    font-size: 14pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0.3in 0 0.15in 0;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+.content h3 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 0.2in 0 0.1in 0;
+}
+
+.content p {
+    margin: 0.1in 0;
+    text-indent: 0.25in;
+}
+
+.content ul, .content ol {
+    margin: 0.1in 0 0.1in 0.5in;
+}
+
+.content li {
+    margin: 5px 0;
+}
+
+/* Code blocks */
+.content pre {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 0.2in 0;
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+    overflow-x: auto;
+}
+
+.content code {
+    background: #f0f0f0;
+    padding: 2px 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+}
+
+/* Tables */
+.content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0.2in 0;
+}
+
+.content th, .content td {
+    border: 1px solid #000;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.content th {
+    background: #e0e0e0;
+    font-weight: bold;
+}
+
+/* Emphasis */
+.content strong {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content em {
+    font-style: italic;
+}
+
+/* Links (for PDF, make them look like references) */
+.content a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Blockquotes */
+.content blockquote {
+    margin: 0.2in 0.5in;
+    padding-left: 0.25in;
+    border-left: 3px solid #666;
+    font-style: italic;
+}
+
+/* Page numbers */
+@page {
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: 'Courier New', monospace;
+        font-size: 10pt;
+    }
+} 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="fbi.css">
+</head>
+<body>
+    <header>
+        <div class="agency">{{ agency }}</div>
+        <div class="classification">{{ classification }}</div>
+    </header>
+    
+    <main>
+        <h1>{{ title }}</h1>
+        <div class="date">{{ date }}</div>
+        
+        <div class="content">
+            {{ content_html | safe }}
+        </div>
+    </main>
+</body>
+</html> 
