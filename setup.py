@@ -9,6 +9,9 @@ setup(
         "weasyprint",
         "pillow",
         "numpy",
+        "python-frontmatter<1.2",
+        "markdown",
+        "jinja2",
     ],
     entry_points={
         "console_scripts": [
